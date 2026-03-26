@@ -7,13 +7,15 @@ class LoginPage {
 
     // Methods
     async open() {
-        await browser.url('https://www.saucedemo.com/');
+        await browser.url('/');
+        console.log('Browser opened!');
     }
 
     async login(username, password) {
         await this.usernameInput.setValue(username);
         await this.passwordInput.setValue(password);
         await this.loginButton.click();
+        console.log('Successfully logged in!')
     }
 }
 

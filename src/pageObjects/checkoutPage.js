@@ -17,10 +17,14 @@ class CheckoutPage {
 
     async completeCheckout() {
         await this.finishButton.click();
+        console.log('Checkout completed.!')
     }
 
     async getSuccessMessage() {
-        return await this.successMessage.getText();
+      const message = await this.successMessage.getText();
+      console.log(`Success message: ${message}`);
+      return message;
+        
     }
 }
 

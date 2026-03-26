@@ -10,14 +10,17 @@ class CartPage {
             const name = await item.$('[data-test="inventory-item-name"]').getText();
 
             if (name === productName) {
+                console.log*('Item found in cart: ${productName}');
                 return true;
             }
         }
+        console.log('Item not found in cart: ${productName}');
         return false;
     }
 
     async proceedToCheckout() {
         await this.checkoutButton.click();
+        console.log('Go to Checkout!')
     }
 }
 
