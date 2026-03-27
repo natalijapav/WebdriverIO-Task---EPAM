@@ -3,7 +3,7 @@
 ## Task Description
 This project demonstrates end-to-end (E2E) test automation using WebdriverIO for the website saucedemo.com. The goal is to validate checkout amd login user flows and ensure application stability through automated testing across multiple browsers.
 
-## Scope:
+## Scope
 ### UC-1 Checkout Flow
 - Login with standard_user
 - Add "Sauce Labs Fleece Jacket" to cart
