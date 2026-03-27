@@ -1,31 +1,5 @@
 const loginPage = require('../pageObjects/loginPage');
-
-const users = [
-    {
-        username: 'standard_user',
-        password: 'secret_sauce',
-        shouldPass: true,
-        errorMessage: null
-    },
-    {
-        username: 'locked_out_user',
-        password: 'secret_sauce',
-        shouldPass: false,
-        errorMessage: 'Epic sadface: Sorry, this user has been locked out.'
-    },
-    {    
-        username: '',
-        password: '',
-        shouldPass: false,
-        errorMessage: 'Epic sadface: Username is required'
-    },
-    {
-        username: 'standard_user',
-        password: 'test',
-        shouldPass: false,
-        errorMessage: 'Epic sadface: Username and password do not match any user in this service'
-    }
-];
+const { users } = require('../testData/userData');
 
 describe('UC-2 Data Driven Login', () => {
     for (const user of users) {

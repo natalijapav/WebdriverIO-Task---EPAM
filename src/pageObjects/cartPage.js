@@ -1,5 +1,5 @@
 class CartPage {
-    // Locatori
+    // Locators
     get cartItems() { return $$('[data-test="inventory-item"]'); }
     get checkoutButton() { return $('button[data-test="checkout"]'); }
 

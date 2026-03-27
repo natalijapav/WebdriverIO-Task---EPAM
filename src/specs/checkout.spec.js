@@ -2,6 +2,7 @@ const loginPage = require('../pageObjects/loginPage');
 const inventoryPage = require('../pageObjects/inventoryPage');
 const cartPage = require('../pageObjects/cartPage');
 const checkoutPage = require('../pageObjects/checkoutPage');
+const { billingInfo } = require('../testData/userData');
 
 const product_name = 'Sauce Labs Fleece Jacket';
 
@@ -22,8 +23,8 @@ describe('UC-1 Checkout Flow', () => {
         // Checkout
         await cartPage.proceedToCheckout();
 
-        // Fill the form
-        await checkoutPage.fillForm('Natalija', 'Pavlovic', '12345');
+        //Fill the form
+        await checkoutPage.fillForm(billingInfo.firstName, billingInfo.lastName, billingInfo.zipCode)
 
         // Finish/Validate message
         await checkoutPage.completeCheckout();
