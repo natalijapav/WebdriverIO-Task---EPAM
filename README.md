@@ -19,11 +19,11 @@ Multiple login scenarios are tested using a data-driven approach:
 - Empty credentials (validation error)
 - Invalid password (authentication error)
 
-## Prerequisites
+## Cross-browsing testing
 - Google Chrome
 - Microsoft Edge
 
-##Technologies Used
+## Technologies Used
 - WebdriverIO
 - JavaScript (ES6)
 - Mocha Framework
