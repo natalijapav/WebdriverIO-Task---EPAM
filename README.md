@@ -18,7 +18,6 @@ E2E test automation for www.saucedemo.com
 - password wrong (Fail with error message)
 
 ## Prerequisites
-- Node.js 18+
 - Google Chrome
 - Microsoft Edge
 
