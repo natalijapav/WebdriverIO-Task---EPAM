@@ -1,25 +1,34 @@
 # WebdriverIO Test Automation
 
 ## Task Description
-E2E test automation for www.saucedemo.com
+This project demonstrates end-to-end (E2E) test automation using WebdriverIO for the website saucedemo.com. The goal is to validate checkout amd login user flows and ensure application stability through automated testing across multiple browsers.
 
+## Scope:
 ### UC-1 Checkout Flow
 - Login with standard_user
 - Add "Sauce Labs Fleece Jacket" to cart
 - Validate item is in cart
 - Proceed to Checkout
 - Fill in Information form
-- Validate success message
+- Complete the purchase and validate the success message
 
 ### UC-2 Data Driven Login
-- standard_user (Should pass)
-- locked_out_user (Fail with specific error message) 
-- empty fields (Fail with error message)
-- password wrong (Fail with error message)
+Multiple login scenarios are tested using a data-driven approach:
+- Valid user login (expected success)
+- Locked user login (expected failure with specific error message)
+- Empty credentials (validation error)
+- Invalid password (authentication error)
 
 ## Prerequisites
 - Google Chrome
 - Microsoft Edge
+
+##Technologies Used
+- WebdriverIO
+- JavaScript (ES6)
+- Mocha Framework
+- Allure Reporter
+- Page Object Model (POM)
 
 ## Installation
 npm install
