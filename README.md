@@ -1,6 +1,6 @@
 # WebdriverIO Test Automation Project
 
-## 📌 Overview
+## Overview
 This project demonstrates end-to-end (E2E) test automation using **WebdriverIO** for the website https://www.saucedemo.com/.
 
 The goal is to validate key user flows such as login and checkout, and ensure application stability through automated cross-browser testing.
@@ -9,7 +9,7 @@ The goal is to validate key user flows such as login and checkout, and ensure ap
 
 ## 🧪 Test Scope
 
-### ✅ UC-1: Checkout Flow
+### UC-1: Checkout Flow
 - Login with `standard_user`
 - Add product **"Sauce Labs Fleece Jacket"** to the cart
 - Validate that the item is present in the cart
@@ -21,17 +21,17 @@ The goal is to validate key user flows such as login and checkout, and ensure ap
 
 ---
 
-### 🔐 UC-2: Data-Driven Login
+### UC-2: Data-Driven Login
 Multiple login scenarios are tested using a data-driven approach:
 
-- ✅ Valid user login (expected success)
-- ❌ Locked user login (expected failure with specific error message)
-- ❌ Empty credentials (validation error)
-- ❌ Invalid password (authentication error)
+- Valid user login (expected success)
+- Locked user login (expected failure with specific error message)
+- Empty credentials (validation error)
+- Invalid password (authentication error)
 
 ---
 
-## 🌐 Cross-Browser Testing
+## Cross-Browser Testing
 Tests are executed in parallel on:
 
 - Google Chrome
@@ -39,7 +39,7 @@ Tests are executed in parallel on:
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - WebdriverIO
 - JavaScript (ES6)
@@ -49,7 +49,13 @@ Tests are executed in parallel on:
 
 ---
 
-## ⚙️ Installation
-
-```bash
+## Installation
 npm install
+
+## Run Tests
+npx wdio run wdio.conf.js
+
+## Generate Allure Report
+npx allure generate allure-results --clean
+npx allure open
+
