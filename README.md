@@ -7,7 +7,7 @@ The goal is to validate key user flows such as login and checkout, and ensure ap
 
 ---
 
-## 🧪 Test Scope
+## Test Scope
 
 ### UC-1: Checkout Flow
 - Login with `standard_user`
